@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+
+</head>
+
+<body>
+    <form method="post" action="http://www.bbc.co.uk">
+        <fieldset>
+            <legend>User Info</legend>
+            <!-- for -> connects label to an input -->
+            <label for="usernameInput">Username</label>
+            <input type="text" name="username" id="usernameInput">
+            <br>
+            <label for="passwordInput">Password</label>
+            <input type="password" name="password" id="passwordInput">
+            <br>
+             <label for="emailInput">Email</label>
+            <input type="email" name="email" id="emailInput">
+            <br>
+            <label for="checkInput">Sign up for our newsletter</label>
+            <input type="checkbox" name="newsletter" id="checkInput">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Misc</legend>
+            <h3>Radio</h3>
+            <label for="radio1">M</label>
+            <input type="radio" name="gender" id="radio1">
+
+            <label for="radio2">F</label>
+            <input type="radio" name="gender" id="radio2">
+
+            <label for="radio3">Other</label>
+            <input type="radio" name="gender" id="radio3">
+            <br>
+            <label for="dropInput">Currency</label>
+            <select name="currency" id="dropInput">
+                <option value="gbp">£</option>
+                <option value="usd">$</option>
+                <option value="eur">€</option>
+            </select>
+            <br>
+            <label for="dateInput">DOB</label>
+            <input type="date" id="dateInput" name="dob">
+            <br>
+            <label for="rangeInput">Weight</label>
+            <input type="range" name="Weight" id="rangeInput" min="0" max="200" step="1" value="0">
+            <input type="number" id="rangeOutput" min="0" max="200" step="1" value="0" readonly>
+            <br>
+            <label for="ageInput">Age</label>
+            <input type="number" name="age" id="ageInput" min="0" max="100" step="1">
+        </fieldset>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script defer>
+        document.getElementById("rangeInput").addEventListener("change", function () {
+            document.getElementById("rangeOutput").value = this.value;
+        });
+    </script>
+</body>
+
+</html>
