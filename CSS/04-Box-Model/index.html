@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        p {
+            border: 5px dashed red;
+            border-radius: 15px;
+            margin: 5px 10px 15px 20px;
+        }
+
+        /* makes it so that borders and padding are 
+        included in the element's width/height */
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante metus, tristique eu cursus
+        eget,
+        lacinia at augue. Curabitur sagittis est porta enim tincidunt ultrices. Integer hendrerit ut massa
+        eget
+        viverra.</p>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+
+</body>
+
+</html>
