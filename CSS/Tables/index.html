@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            caption-side: bottom;
+            empty-cells: hide;
+            /* empty-cells doesnt work if 
+            borders are collapsed */
+        }
+
+        tbody>tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+
+        tbody>tr:hover {
+            cursor: pointer;
+            background-color: lightblue;
+        }
+
+
+
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Eggs</li>
+        <li>Milk</li>
+        <li>Sugar</li>
+    </ul>
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+    <ol>
+        <li><a href="#">First</a></li>
+        <li><a href="#">Second</a></li>
+        <li><a href="#">Third</a></li>
+    </ol>
+
+
+    <section>
+        <h2>Tables</h2>
+        <table>
+            <caption>Trainers</caption>
+            <thead>
+                <tr>
+                    <th> Name </th>
+                    <th> Specialism </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Jordan H </td>
+                    <td> Java </td>
+                </tr>
+                <tr>
+                    <td> Shafeeq </td>
+                    <td> Oracle </td>
+                </tr>
+                <tr>
+                    <td> Cameron </td>
+                    <td> Web </td>
+                </tr>
+                <tr>
+                    <td> Cameron </td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+
+</body>
+
+</html>
