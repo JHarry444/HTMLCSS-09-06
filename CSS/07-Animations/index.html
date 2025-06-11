@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+        #heartBeat:hover {
+            animation: myAnim 2s ease 0s 11 normal forwards;
+        }
+
+        h2:hover {
+            font-size: 128pt;
+            transition: font-size 2s ease-out 0s;
+            transition-property: font-size;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+            transition-delay: 0s;
+        }
+
+        @keyframes myAnim {
+            0% {
+                animation-timing-function: ease-in;
+                opacity: 1;
+                transform: translateX(-48px);
+            }
+
+            24% {
+                opacity: 1;
+            }
+
+            40% {
+                animation-timing-function: ease-in;
+                transform: translateX(-26px);
+            }
+
+            65% {
+                animation-timing-function: ease-in;
+                transform: translateX(-13px);
+            }
+
+            82% {
+                animation-timing-function: ease-in;
+                transform: translateX(-6.5px);
+            }
+
+            93% {
+                animation-timing-function: ease-in;
+                transform: translateX(-4px);
+            }
+
+            25%,
+            55%,
+            75%,
+            87%,
+            98% {
+                animation-timing-function: ease-out;
+                transform: translateX(0px);
+            }
+
+            100% {
+                animation-timing-function: ease-out;
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h2>Heartbeat</h2>
+        <img src="me.jpg" alt="Check my heartbeat" id="heartBeat">
+    </section>
+</body>
+
+</html>
