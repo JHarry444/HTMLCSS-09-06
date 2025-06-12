@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        nav {
+            height: 50px;
+            width: 100%;
+            border: 2px dotted black;
+            border-radius: 10px;
+
+            /* enables flexing */
+            display: flex;
+            /* row -> left-to-right, row-reverse -> right-to-left  column -> up-to-down, column-reverse -> down-to-up*/
+            flex-direction: column;
+            /* alters how the elements are layed out in the flex direction (i.e. horizontally with row or row-reverse) */
+            justify-content: space-around;
+            /* controls whether elements will move to a new column or row when they reach the end of the flex container */
+            flex-wrap: wrap;
+            /* alters how the elements are layed out perpendicular to the flex direction (i.e. vertically with row or row-reverse) */
+            align-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- justify -> positions elements along the flex axis (row -> x axis, column -> y axis) -->
+    <!-- align does the opposite of justify -->
+    <nav>
+        <a href="1">1</a>
+        <a href="2">2</a>
+        <a href="3">3</a>
+        <a href="4">4</a>
+        <a href="5">5</a>
+        <a href="6">6</a>
+        <a href="7">7</a>
+        <a href="8">8</a>
+        <a href="9">9</a>
+        <a href="10">10</a>
+    </nav>
+</body>
+
+</html>
